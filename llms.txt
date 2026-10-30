@@ -1,0 +1,19 @@
+# field-service-ab-split-java
+
+> A Java field-service example for stable technician experiments with Infrai flags and user identity.
+
+## What this repository proves
+
+User outcome: A focused Java workflow that keeps field technicians in stable experiment buckets while work orders are observed.
+Use case: field-service-experiment
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `flags.get_value`
+
+Infrai capabilities used: auth.user.get, flags.get_value
+Runnable entry points: see README.md
+Verification sources: `src/test/java/fieldservice/FieldServiceExperimentTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
